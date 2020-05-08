@@ -1,10 +1,125 @@
 .logo {
-  display: block;
   width: 190px;
   margin-right: 50px;
 }
 
-.email {
+.header__top {
+  margin-bottom: 20px;
+}
+
+.with-icon {
   font-size: 14px;
   color: black;
+  display: flex;
+  align-items: center;
+  &::before {
+    display: block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 10px;
+  }
+}
+
+.top__address {
+  &::before {
+    background-image: url("./../../img/maps-and-flags.png");
+  }
+}
+
+.email {
+  &::before {
+    background-image: url("./../../img/mail.png");
+  }
+}
+
+.top__right {
+  flex-grow: 0.25;
+}
+
+.working-hours {
+  p {
+    margin: 0;
+    font-size: 10px;
+  }
+}
+
+.tel-number__link {
+  color: black;
+}
+
+.top__call {
+  color: $main-green;
+  padding: 15px 20px;
+  border: 1px solid $main-green;
+  border-radius: 5px;
+}
+
+ 
+.navbar {
+  border-top: 1px solid #f2f2f2;
+
+  .basic-flex {
+    justify-content: space-around;
+  }
+}
+
+.navbar__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  padding: 20px 25px;
+  transition: background 0.3s ease;
+
+  &:hover, &:focus {
+    background: $light-green;
+    color: white;
+  }
+}
+
+.with-menu {
+  &::after {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/down-arrow.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.account__related {
+  flex-grow: 0.3;
+  a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.cabinet {
+  &::before {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/user_i.png")
+  }
+}
+
+.basket {
+  &::before {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/cart.png")
+  }
 }
