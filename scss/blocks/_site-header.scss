@@ -56,6 +56,12 @@
   padding: 15px 20px;
   border: 1px solid $main-green;
   border-radius: 5px;
+  transition: 0.3s ease;;
+
+  &:hover, &:focus {
+    background: $main-green;
+    color:white;
+  }
 }
 
  

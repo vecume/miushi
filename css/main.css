@@ -401,7 +401,16 @@ a {
 }
 
 .main-header {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
+}
+
+.btn {
+  padding: 0;
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
 }
 
 .container {
@@ -469,6 +478,13 @@ a {
   padding: 15px 20px;
   border: 1px solid #1fba0a;
   border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top__call:hover, .top__call:focus {
+  background: #1fba0a;
+  color: white;
 }
 
 .navbar {
@@ -533,5 +549,121 @@ a {
   width: 24px;
   height: 24px;
   background-image: url("../../img/cart.png");
+}
+
+.banner {
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../../img/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__title__box {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  margin: 35px 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.discount {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#de2024), to(#b71f24));
+  background: linear-gradient(to bottom, #de2024, #b71f24);
+  font-weight: bold;
+}
+
+.discount span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.banner__title {
+  margin: 0;
+  width: 50%;
+  font-family: "Lemon Tuesday";
+  color: #84c604;
+  font-size: 110px;
+}
+
+.banner__description {
+  margin: 50px 0;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  font-weight: normal;
+}
+
+.banner__more__link {
+  text-transform: uppercase;
+  padding: 20px 75px;
+  background: #fd4f10;
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.banner__controllers {
+  width: 5%;
+  margin: 25px auto;
+}
+
+.controller {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 5;
+  top: 50%;
+}
+
+.controller--left {
+  left: 15px;
+  background-image: url("../../img/arrow.png");
+}
+
+.controller--right {
+  right: 15px;
+  background-image: url("../../img/arrow.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.banner__controllers {
+  margin-top: 25px;
+}
+
+.controller-radio input {
+  width: 0;
+  height: 0;
+}
+
+.controller-radio input:checked + span {
+  background: #1fba0a;
+}
+
+.custom-radio {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #c2c2c2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */
