@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.basic-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header {
+  padding: 20px 0;
+}
