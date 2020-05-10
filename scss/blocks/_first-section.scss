@@ -90,11 +90,14 @@
 
 .controller-radio {
   input {
+    display: none;
     width: 0;
     height: 0;
 
     &:checked + span {
       background: $main-green;
+      border: none;
+      transform: scale(1.15);
     }
   }
 }

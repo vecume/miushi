@@ -1,0 +1,113 @@
+.reasons__title {
+  width: 78%;
+}
+
+.reasons__box {
+  flex-wrap: wrap;
+  align-items: unset;
+}
+
+.reasons__item {
+  text-align: center;
+  padding: 10px;
+  width: 17%;
+  margin-bottom: 25px;
+}
+
+.reasons__img__wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.reasons__img {
+  width: auto;
+}
+
+.feedbacks__box {
+  padding-bottom: 50px;
+}
+
+.feedbacks__item {
+  width: 31%;
+  padding: 45px;
+  border: 1px solid #e6e6e6;
+}
+
+.user__header {
+  img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+}
+
+.user__info {
+  margin-left: 25px;
+  h5 {
+    margin: 5px 0;
+    color: $vk-color;
+    font-size: 15px;
+  }
+  p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: $text-color;
+  }
+}
+
+.bought__img {
+  width: 40%;
+}
+
+.feedback__text {
+  margin: 20px 0;
+}
+
+.vk__footer {
+  margin: 30px 0;
+  padding: 15px 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #eaebed
+}
+
+.vk__actions {
+  justify-content: unset;
+
+  span {
+    font-weight: bold;
+    color: $vk-color;
+  }
+
+  button {
+    margin-right: 20px;
+  }
+
+  i {
+    color: #bacada;
+  }
+
+  .fa-comment-alt {
+    margin-right: 5px;
+  }
+}
+
+.vk__join__btn {
+  flex-grow: 0.1;
+  justify-content: space-around;
+  margin-top: 15px;
+  height: 30px;
+  padding: 0 65px;
+  line-height: 30px;
+  width: 100%;
+  background: $vk-color;
+  color: white;
+  font-weight: bold;
+
+  &::before {
+   background-image: url("../../img/vk.png");
+   height: 30px;
+   width: 30px;
+  }
+}
