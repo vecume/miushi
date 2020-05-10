@@ -56,6 +56,11 @@
   display: inline-block;
   border-radius: 10px;
   margin-bottom: 50px;
+  transition: 0.3s ease;
+
+  &:hover, &:focus {
+    background: $hover-orange;
+  }
 }
 
 .banner__controllers {

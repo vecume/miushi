@@ -712,6 +712,12 @@ ul {
   display: inline-block;
   border-radius: 10px;
   margin-bottom: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.banner__more__link:hover, .banner__more__link:focus {
+  background: #ff2600;
 }
 
 .banner__controllers {
@@ -1206,6 +1212,10 @@ ul {
   background: #ff2600;
 }
 
+.about__section {
+  padding-bottom: 75px;
+}
+
 .about__title {
   width: 52%;
 }
@@ -1220,5 +1230,105 @@ ul {
   font-size: 14px;
   color: #4d4d4d;
   line-height: 1.3;
+}
+
+.main__footer {
+  padding: 50px 0;
+  background: #1a2d34;
+}
+
+.main__footer a {
+  color: white;
+}
+
+.main__footer a:hover, .main__footer a:focus {
+  text-decoration: underline;
+}
+
+.footer__top {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  padding-bottom: 25px;
+}
+
+.types__item {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product__footer__title {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.product__footer__item {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.product__footer__item a {
+  color: #6b96a5;
+}
+
+.product__footer__list__wrapper {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
+}
+
+.product__footer__list__wrapper .product__footer__list:first-child {
+  margin-right: 15px;
+}
+
+.footer__bottom {
+  color: #6b96a5;
+}
+
+.social__item {
+  display: block;
+  width: 27px;
+  height: 27px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../img/instagram.png");
+}
+
+.social__item a {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 50%;
+}
+
+.social__item a:hover, .social__item a:focus {
+  -webkit-box-shadow: 0 0 15px gray;
+          box-shadow: 0 0 15px gray;
+}
+
+.social__item:nth-child(2) {
+  background-image: url("../../img/vkontakte.png");
+}
+
+.social__item:nth-child(3) {
+  background-image: url("../../img/facebook.png");
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.agreement-text {
+  margin-right: 320px;
 }
 /*# sourceMappingURL=main.css.map */

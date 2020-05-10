@@ -1,0 +1,89 @@
+.main__footer {
+  padding: 50px 0;
+  background: $footer-color;
+
+  a {
+    color: white;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__top {
+  align-items: unset;
+  padding-bottom: 25px;
+}
+
+.types__item {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product__footer__title {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.product__footer__item {
+  font-size: 12px;
+  margin-bottom: 15px;
+  
+  a {
+    color: $footer-text-color;
+  }
+}
+
+
+.product__footer__list__wrapper {
+  align-items: unset;
+  flex-grow: 0.3;
+
+  .product__footer__list:first-child {
+    margin-right: 15px;
+  }
+}
+
+.footer__bottom {
+  color: $footer-text-color;
+}
+
+.social__item {
+  display: block;
+  width: 27px;
+  height: 27px;
+  transition: 0.3s ease;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../img/instagram.png");
+
+  a {
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    
+    &:hover, &:focus {
+      box-shadow: 0 0 15px gray;
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../img/vkontakte.png");
+  }
+  &:nth-child(3) {
+    background-image: url("../../img/facebook.png");
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.agreement-text {
+  margin-right: 320px;
+}
