@@ -1,0 +1,54 @@
+.contact__section {
+  padding: 75px 0;
+  background-image: url("../../img/feedback_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact__section__inside__wrapper {
+  width: 60%;
+  color: white;
+  margin-left: auto;
+}
+
+.question-text {
+  font-size: 17px;
+  margin: 0;
+}
+
+.what-to-do-text {
+  margin-top: 5px;
+  font-size: 54px;
+  font-family: "Lemon Tuesday", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.warning-text {
+  margin: 25px 0;
+  font-size: 11.5px;
+  color: rgba($color: #fff, $alpha: 0.7);
+}
+
+.contact__input {
+  background: transparent;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #d4d4d4;
+  outline: none;
+
+  &:focus {
+    background: rgba($color: #fff, $alpha: 0.2);
+  }
+}
+
+.send__btn {
+  padding: 20px 50px;
+  color: white;
+  font-size: 14px;
+  background: $main-orange;
+  border-radius: 5px;
+}
