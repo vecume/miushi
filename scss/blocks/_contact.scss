@@ -51,4 +51,9 @@
   font-size: 14px;
   background: $main-orange;
   border-radius: 5px;
+  transition: 0.3s ease;
+
+  &:hover, &:focus {
+    background: $hover-orange;
+  }
 }
