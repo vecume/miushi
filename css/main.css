@@ -510,6 +510,12 @@ ul {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 320px;
+  }
+}
+
 .logo {
   width: 190px;
   margin-right: 50px;
@@ -1579,6 +1585,10 @@ ul {
   text-decoration: underline;
 }
 
+.footer__menu-btn {
+  display: none;
+}
+
 .footer__top {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
@@ -1664,5 +1674,83 @@ ul {
 
 .agreement-text {
   margin-right: 320px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .types__item {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .types__item a {
+    color: #6b96a5;
+  }
+  .product__footer__list__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__menu-btn {
+    display: block;
+  }
+  .types__list, .product__footer__list {
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #20353d;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .footer__list--active {
+    height: auto;
+    padding: 25px;
+    opacity: 1;
+    pointer-events: unset;
+  }
+  .product__footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #20353d;
+  }
+  .product__footer__title::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .product__footer__title--active::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .footer__bottom {
+    font-size: 12px;
+  }
+  .agreement-text {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

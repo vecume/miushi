@@ -11,6 +11,10 @@
   }
 }
 
+.footer__menu-btn {
+  display: none;
+}
+
 .footer__top {
   align-items: unset;
   padding-bottom: 25px;
@@ -86,4 +90,71 @@
 
 .agreement-text {
   margin-right: 320px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .footer__top {
+    flex-direction: column;
+  }
+  .types__item {
+    font-size: 12px;
+    margin-bottom: 15px;
+    
+    a {
+      color: $footer-text-color;
+    }
+  }
+  .product__footer__list__wrapper {
+    flex-direction: column;
+  }
+  .footer__menu-btn {
+    display: block;
+  }
+  .types__list, .product__footer__list {
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: $footer-light-color;
+    transition: 0.3s ease;
+  }
+  .footer__list--active {
+    height: auto;
+    padding: 25px;
+    opacity: 1;
+    pointer-events: unset;
+  }
+  .product__footer__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid $footer-light-color;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/arrow-down.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      transition: 0.3s ease;
+    }
+  }
+  .product__footer__title--active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  .footer__bottom {
+    font-size: 12px;
+  }.agreement-text {
+    margin-right: 0;
+  }
 }
