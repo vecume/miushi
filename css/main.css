@@ -793,6 +793,9 @@ ul {
   .big-logo {
     display: none;
   }
+  .logo {
+    margin: 0;
+  }
 }
 
 .product--new {
