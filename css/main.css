@@ -653,7 +653,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 200;
     background: #fff;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
@@ -668,7 +668,7 @@ ul {
   .btn-menu {
     display: block;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     top: 40px;
     left: 40px;
   }
@@ -699,7 +699,7 @@ ul {
   }
   .layer--active {
     opacity: 1;
-    z-index: 1;
+    z-index: 99;
   }
   .navbar__menu {
     -webkit-box-orient: vertical;
@@ -1248,6 +1248,25 @@ ul {
   background: #f2f2f2;
   border: none;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section__title {
+    width: 50%;
+  }
+  .title__text {
+    font-size: 48px;
+  }
+  .title__img {
+    width: 80px;
+  }
+  .product__item {
+    width: 30%;
+    padding-bottom: 20px;
+  }
+  .product__item:last-child {
+    display: none;
+  }
 }
 
 .reasons__title {

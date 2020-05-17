@@ -142,7 +142,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 200;
     background: #fff;
     transition: 0.5s ease;
     transform: translateX(-150%);
@@ -156,7 +156,7 @@
   .btn-menu {
     display: block;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     top: 40px;
     left: 40px;
   }
@@ -185,7 +185,7 @@
   }
   .layer--active {
     opacity: 1;
-    z-index: 1;
+    z-index: 99;
   }
   .navbar__menu {
     flex-direction: column;
