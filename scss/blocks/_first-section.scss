@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   padding: 60px 0;
-  background-image: url("../../img/header_bg.jpg");
+  background-image: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -81,11 +81,11 @@
 
 .controller--left {
   left: 15px;
-  background-image: url("../../img/arrow.png");
+  background-image: url("../img/arrow.png");
 }
 .controller--right {
   right: 15px;
-  background-image: url("../../img/arrow.png");
+  background-image: url("../img/arrow.png");
   transform: rotate(180deg);
 }
 
@@ -128,5 +128,30 @@
   }
   .banner__controllers {
     width: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .banner {
+    padding-bottom: 10px;
+  }
+  .banner__title {
+    font-size: 48px;
+  }
+  .discount {
+    margin-top: 50px;
+    font-size: 14px;
+    height: 60px;
+    width: 60px;
+  }
+  .banner__controllers {
+    margin-top: 25px;
+    position: relative;
+    top: 80px;
+    width: 20%;
+  }
+  .banner__more__link {
+    margin-bottom: 25px;
   }
 }

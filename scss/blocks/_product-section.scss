@@ -67,13 +67,13 @@
     padding: 7.5px;
     border: 1px solid #808080;
     border-radius: 50%;
-    background-image: url("../../img/minus.png");
+    background-image: url("../img/minus.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center center;
 
     &:last-child {
-      background-image: url("../../img/plus.png");
+      background-image: url("../img/plus.png");
     }
   }
 }
@@ -100,7 +100,7 @@
     height: 18px;
     margin: 0;
     margin-left: 15px;
-    background-image: url("../../img/white-basket.png");
+    background-image: url("../img/white-basket.png");
   }
 }
 
@@ -129,13 +129,13 @@
   width: 30px;
   height: 20px;
   display: block;
-  background-image: url("../../img/right-arrow.png");
+  background-image: url("../img/right-arrow.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .controller-prev {
-  background-image: url("../../img/right-arrow.png");
+  background-image: url("../img/right-arrow.png");
   transform: rotate(180deg);
 }
 
@@ -148,7 +148,7 @@
 
 .news__and__discounts {
   padding: 100px 0;
-  background-image: url("../../img/new_bg.jpg");
+  background-image: url("../img/new_bg.jpg");
 }
 
 .status__link__wrapper {
@@ -212,7 +212,7 @@
     background-color: #dcdcdd;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
-    background-image: url("../../img/down-arrow.png");
+    background-image: url("../img/down-arrow.png");
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center center;
@@ -247,5 +247,35 @@
   }
   .status__link__wrapper {
     width: 20%;
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .section__title {
+    width: 100%;
+  }
+  .title__text {
+    font-size: 40px;
+  }
+  .title__img {
+    width: 70px;
+  }
+  .product__item {
+    width: 95%;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 auto;
+
+    &:first-child {
+      display: block;
+    }
+  }
+  .status__link__wrapper {
+    width: 70%;
+  }
+  .products__controllers {
+    display: none;
   }
 }

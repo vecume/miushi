@@ -1,6 +1,6 @@
 .contact__section {
   padding: 100px 0;
-  background-image: url("../../img/feedback_bg.jpg");
+  background-image: url("../img/feedback_bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,10 +63,29 @@
 @media only screen and (max-width: 1200px) {
   .contact__section {
     padding: 75px 0;
-    background-image: url("../../img/feedback_bg-750.png");
+    background-image: url("../img/feedback_bg-750.png");
   }
   .contact__section__inside__wrapper {
     width: 100%;
     margin: unset;
   }
 }
+
+
+@media only screen and (max-width: 750px) {
+  .contact__form {
+    flex-direction: column;
+
+    input {
+      width: 100%;
+    }
+  }
+  .what-to-do-text {
+    margin-top: 15px;
+    font-size: 44px;
+  }
+  .send__btn {
+    margin-top: 25px;
+    width: 100%;
+  }
+} 

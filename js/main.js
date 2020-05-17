@@ -2,6 +2,41 @@ const elMenuBtn = document.querySelector('.btn-menu');
 const elLayer = document.querySelector('.layer');
 const elNavBar = document.querySelector('.navbar');
 const elsFooterBtn = document.querySelectorAll('.product__footer__title');
+const elShowMoreReasons = document.querySelector('.show-more--reasons');
+const elShowMoreAbout = document.querySelector('.show-more--about');
+
+elShowMoreReasons.addEventListener('click', () => {
+  if (elShowMoreReasons.textContent.toLowerCase() == "показать все") {
+    const elsHiddenReasons = document.querySelectorAll('.reasons__item--hide');
+    elsHiddenReasons.forEach(el => {
+      el.style = "display:block; opacity:1";
+    });
+    elShowMoreReasons.textContent = "СКРЫТЬ ВСЕ"
+  } else {
+    const elsHiddenReasons = document.querySelectorAll('.reasons__item--hide');
+    elsHiddenReasons.forEach(el => {
+      el.style = "display:none; opacity:0;";
+    });
+    elShowMoreReasons.textContent = "показать все"
+  }
+});
+
+elShowMoreAbout.addEventListener('click', () => {
+  if (elShowMoreAbout.textContent.toLowerCase() == "показать ещё") {
+    const elsHiddenText = document.querySelectorAll('.about__content--hide');
+    elsHiddenText.forEach(el => {
+      el.style = "display:block; opacity:1";
+    });
+    elShowMoreAbout.textContent = "СКРЫТЬ ВСЕ"
+  } else {
+    const elsHiddenText = document.querySelectorAll('.about__content--hide');
+    elsHiddenText.forEach(el => {
+      el.style = "display:none; opacity:0;";
+    });
+    elShowMoreAbout.textContent = "показать ещё"
+  }
+});
+
 
 elMenuBtn.addEventListener('click', () => {
 

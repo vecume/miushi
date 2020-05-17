@@ -50,3 +50,40 @@
     width: 735px;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .about__title {
+    width: 100%;
+    .title__img {
+      display: none;
+    }
+    .title__text {
+      margin: 0;
+      margin-top: 25px;
+    }
+  }
+  .about-content__wrapper--display-750 {
+    width: 100%;
+  }
+  .about__content__text {
+    width: 100%;
+  }
+  .about__content__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__content__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  .about__content--hide {
+    opacity: 0;
+    display: none;
+  }
+}
