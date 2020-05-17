@@ -111,3 +111,22 @@
    width: 30px;
   }
 }
+
+
+@media only screen and (max-width: 1200px) {
+  .reasons__title {
+    width: 100%;
+  }
+  .reasons__box {
+    justify-content: space-around;
+  }
+  .reasons__item {
+    width: 30%;
+  }
+  .feedbacks__item {
+    width: 47%;
+    &:last-child {
+      display: none;
+    }
+  }
+}
