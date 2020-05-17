@@ -115,3 +115,18 @@
   border: 1px solid #c2c2c2;
   transition: 0.3s;
 }
+
+@media only screen and (max-width: 1200px) {
+  .banner__title {
+    font-size: 70px;
+  }
+  .discount {
+    margin-left: 50px;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+  }
+  .banner__controllers {
+    width: 10%;
+  }
+}
