@@ -4,6 +4,8 @@ const elNavBar = document.querySelector('.navbar');
 const elsFooterBtn = document.querySelectorAll('.product__footer__title');
 const elShowMoreReasons = document.querySelector('.show-more--reasons');
 const elShowMoreAbout = document.querySelector('.show-more--about');
+const elLogo = document.querySelector('.logo img');
+
 
 elShowMoreReasons.addEventListener('click', () => {
   if (elShowMoreReasons.textContent.toLowerCase() == "показать все") {
@@ -63,3 +65,5 @@ elsFooterBtn.forEach(btn => {
     }
   })
 });
+
+
