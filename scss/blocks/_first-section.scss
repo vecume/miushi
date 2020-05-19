@@ -38,6 +38,7 @@
   font-family: "Lemon Tuesday";
   color: $light-green;
   font-size: 110px;
+  font-weight: normal;
 }
 
 .banner__description {
@@ -70,13 +71,19 @@
 
 .controller {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-size: contain;
+  width: 40px;
+  height: 40px;
+  background-size: 30%;
+  border-radius: 50%;
+  transition: 0.3s ease;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 5;
   top: 50%;
+
+  &:hover, &:focus {
+    background-color: #222;
+  } 
 }
 
 .controller--left {
@@ -93,21 +100,8 @@
   margin-top: 25px;
 }
 
-.controller-radio {
-  input {
-    display: none;
-    width: 0;
-    height: 0;
 
-    &:checked + span {
-      background: $main-green;
-      border: none;
-      transform: scale(1.15);
-    }
-  }
-}
-
-.custom-radio {
+.controllers__btn {
   display: block;
   width: 15px;
   height: 15px;
@@ -115,6 +109,8 @@
   border: 1px solid #c2c2c2;
   transition: 0.3s;
 }
+
+
 
 @media only screen and (max-width: 1200px) {
   .banner__title {

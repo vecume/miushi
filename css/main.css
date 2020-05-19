@@ -403,6 +403,10 @@ ul {
   list-style: none;
 }
 
+section {
+  padding-top: 50px !important;
+}
+
 .basic-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +515,12 @@ ul {
 }
 
 @media only screen and (max-width: 750px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
   .container {
     width: 320px;
   }
@@ -686,12 +696,6 @@ ul {
     padding: 30px 0;
     width: 350px;
   }
-  .navbar__menu__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .with-menu::after {
     display: none;
   }
@@ -738,7 +742,11 @@ ul {
   .top__address {
     display: none;
   }
-  .navbar__menu__wrapper {
+  .navbar__menu-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .top__right {
@@ -960,6 +968,7 @@ ul {
   font-family: "Lemon Tuesday";
   color: #84c604;
   font-size: 110px;
+  font-weight: normal;
 }
 
 .banner__description {
@@ -993,13 +1002,20 @@ ul {
 
 .controller {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-size: contain;
+  width: 40px;
+  height: 40px;
+  background-size: 30%;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 5;
   top: 50%;
+}
+
+.controller:hover, .controller:focus {
+  background-color: #222;
 }
 
 .controller--left {
@@ -1018,20 +1034,7 @@ ul {
   margin-top: 25px;
 }
 
-.controller-radio input {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-.controller-radio input:checked + span {
-  background: #1fba0a;
-  border: none;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.custom-radio {
+.controllers__btn {
   display: block;
   width: 15px;
   height: 15px;
@@ -1104,7 +1107,6 @@ ul {
 }
 
 .title__text {
-  margin: 80px 0;
   font-size: 60px;
 }
 
@@ -1143,11 +1145,26 @@ ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 30px 0;
+  font-family: "RobotoSlab", "Arial",sans-serif;
   padding: 0 25px;
 }
 
 .price__and__amount strong {
   font-size: 22px;
+}
+
+.amount__add-btn,
+.amount__remove-btn {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.amount__add-btn:hover, .amount__add-btn:focus,
+.amount__remove-btn:hover,
+.amount__remove-btn:focus {
+  border: 1px solid #fd4f10;
+  -webkit-box-shadow: 0 0 5px #fd4f10;
+          box-shadow: 0 0 5px #fd4f10;
 }
 
 .amount__wrapper {
@@ -1219,10 +1236,18 @@ ul {
           flex-grow: 0.5;
 }
 
-.product__controller .custom-radio {
+.products__controller {
+  border: none;
   width: 10px;
   height: 10px;
   background-color: #808080;
+}
+
+.controllers__btn--active {
+  background-color: #1fba0a;
+  border: 1px solid transparent;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .controller-btn {
@@ -1366,7 +1391,7 @@ ul {
     width: 70px;
   }
   .product__item {
-    width: 95%;
+    width: 80%;
     padding-bottom: 20px;
     display: none;
     margin: 0 auto;
@@ -1379,6 +1404,12 @@ ul {
   }
   .products__controllers {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product__item {
+    width: 100%;
   }
 }
 

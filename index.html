@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -40,7 +40,7 @@
       <div class="layer"></div>
       <nav class="navbar">
         <div class="navbar__wrapper">
-          <div class="container navbar__menu__wrapper basic-flex">
+          <div class="container navbar__menu-wrapper basic-flex">
             <ul class="navbar__menu basic-flex">
               <li class="menu__item"><a href="#" class="menu__link basic-flex with-menu">Меню</a></li>
               <li class="menu__item"><a href="" class="menu__link">Акции и скидки</a></li>
@@ -79,18 +79,9 @@
           <a href="#" class="banner__more__link">Подробнее</a>
         </div>
         <div class="banner__controllers basic-flex">
-          <label class="controller-radio">
-            <input type="radio" name="image">
-            <span class="custom-radio"></span>
-          </label>
-          <label class="controller-radio">
-            <input type="radio" name="image">
-            <span class="custom-radio"></span>
-          </label>
-          <label class="controller-radio">
-            <input type="radio" name="image" checked>
-            <span class="custom-radio"></span>
-          </label>
+            <button type="button" class="btn controllers__btn"></button>
+            <button type="button" class="btn controllers__btn"></button>
+            <button type="button" class="btn controllers__btn controllers__btn--active"></button>
         </div>
       </div>
       <button class="btn controller controller--left" type="button"></button>
@@ -112,9 +103,9 @@
             <div class="price__and__amount basic-flex">
               <strong>2050<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -128,9 +119,9 @@
             <div class="price__and__amount basic-flex">
               <strong>1590<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -144,9 +135,9 @@
             <div class="price__and__amount basic-flex">
               <strong>510<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -160,9 +151,9 @@
             <div class="price__and__amount basic-flex">
               <strong>400<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -172,16 +163,11 @@
       <div class="products__controllers basic-flex">
         <button type="button" class="btn controller-btn controller-prev"></button>
         <div class="products__controllers__wrapper basic-flex">
-          <label class="product__controller controller-radio"><input type="radio" name="product" checked><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
+          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
         </div>
         <button type="button" class="btn controller-btn controller-next"></button>
       </div>
@@ -202,9 +188,9 @@
             <div class="price__and__amount basic-flex">
               <strong>260<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -218,9 +204,9 @@
             <div class="price__and__amount basic-flex">
               <strong>280<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -234,9 +220,9 @@
             <div class="price__and__amount basic-flex">
               <strong>280<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -250,9 +236,9 @@
             <div class="price__and__amount basic-flex">
               <strong>290<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -262,16 +248,11 @@
       <div class="products__controllers basic-flex">
         <button type="button" class="btn controller-btn controller-prev"></button>
         <div class="products__controllers__wrapper basic-flex">
-          <label class="product__controller controller-radio"><input type="radio" name="product" checked><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
+          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
         </div>
         <button type="button" class="btn controller-btn controller-next"></button>
       </div>
@@ -292,9 +273,9 @@
             <div class="price__and__amount basic-flex">
               <strong>480<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -308,9 +289,9 @@
             <div class="price__and__amount basic-flex">
               <strong>380<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -324,9 +305,9 @@
             <div class="price__and__amount basic-flex">
               <strong>450<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -340,9 +321,9 @@
             <div class="price__and__amount basic-flex">
               <strong>390<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -352,16 +333,11 @@
       <div class="products__controllers basic-flex">
         <button type="button" class="btn controller-btn controller-prev"></button>
         <div class="products__controllers__wrapper basic-flex">
-          <label class="product__controller controller-radio"><input type="radio" name="product" checked><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
+          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
         </div>
         <button type="button" class="btn controller-btn controller-next"></button>
       </div>
@@ -390,7 +366,7 @@
                   <span class="sauce__price">140</span>
                   <sup>руб.</sup>
                 </div>
-                <button class="btn souce__add">+</button>
+                <button type="button" class="btn souce__add">+</button>
               </div>
               <label class="sauce__type">
                 <select>
@@ -402,9 +378,9 @@
             <div class="price__and__amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -426,7 +402,7 @@
                   <span class="sauce__price">0</span>
                   <sup>руб.</sup>
                 </div>
-                <button class="btn souce__add">+</button>
+                <button type="button" class="btn souce__add">+</button>
               </div>
               <label class="sauce__type">
                 <select>
@@ -438,9 +414,9 @@
             <div class="price__and__amount basic-flex">
               <strong>290<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -462,7 +438,7 @@
                   <span class="sauce__price">140</span>
                   <sup>руб.</sup>
                 </div>
-                <button class="btn souce__add">+</button>
+                <button type="button" class="btn souce__add">+</button>
               </div>
               <label class="sauce__type">
                 <select>
@@ -474,9 +450,9 @@
             <div class="price__and__amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -498,7 +474,7 @@
                   <span class="sauce__price">140</span>
                   <sup>руб.</sup>
                 </div>
-                <button class="btn souce__add">+</button>
+                <button type="button" class="btn souce__add">+</button>
               </div>
               <label class="sauce__type">
                 <select>
@@ -510,9 +486,9 @@
             <div class="price__and__amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__add-btn"></button>
                 <span>1</span>
-                <button type="button" class="btn"></button>
+                <button type="button" class="btn amount__remove-btn"></button>
               </div>
             </div>
           </div>
@@ -522,16 +498,11 @@
       <div class="products__controllers basic-flex">
         <button type="button" class="btn controller-btn controller-prev"></button>
         <div class="products__controllers__wrapper basic-flex">
-          <label class="product__controller controller-radio"><input type="radio" name="product" checked><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
-          <label class="product__controller controller-radio"><input type="radio" name="product"><span
-              class="custom-radio"></span></label>
+          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
+          <button type="button" class="btn controllers__btn products__controller"></button>
         </div>
         <button type="button" class="btn controller-btn controller-next"></button>
       </div>
@@ -552,9 +523,9 @@
               <div class="price__and__amount basic-flex">
                 <strong>260<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__add-btn"></button>
                   <span>1</span>
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__remove-btn"></button>
                 </div>
               </div>
             </div>
@@ -568,9 +539,9 @@
               <div class="price__and__amount basic-flex">
                 <strong>280<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__add-btn"></button>
                   <span>1</span>
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__remove-btn"></button>
                 </div>
               </div>
             </div>
@@ -584,9 +555,9 @@
               <div class="price__and__amount basic-flex">
                 <strong>280<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__add-btn"></button>
                   <span>1</span>
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__remove-btn"></button>
                 </div>
               </div>
             </div>
@@ -600,9 +571,9 @@
               <div class="price__and__amount basic-flex">
                 <strong>290<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__add-btn"></button>
                   <span>1</span>
-                  <button type="button" class="btn"></button>
+                  <button type="button" class="btn amount__remove-btn"></button>
                 </div>
               </div>
             </div>
@@ -612,22 +583,17 @@
         <div class="products__controllers basic-flex">
           <button type="button" class="btn controller-btn controller-prev"></button>
           <div class="products__controllers__wrapper basic-flex">
-            <label class="product__controller controller-radio"><input type="radio" name="product" checked><span
-                class="custom-radio"></span></label>
-            <label class="product__controller controller-radio"><input type="radio" name="product"><span
-                class="custom-radio"></span></label>
-            <label class="product__controller controller-radio"><input type="radio" name="product"><span
-                class="custom-radio"></span></label>
-            <label class="product__controller controller-radio"><input type="radio" name="product"><span
-                class="custom-radio"></span></label>
-            <label class="product__controller controller-radio"><input type="radio" name="product"><span
-                class="custom-radio"></span></label>
+            <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
+            <button type="button" class="btn controllers__btn products__controller"></button>
+            <button type="button" class="btn controllers__btn products__controller"></button>
+            <button type="button" class="btn controllers__btn products__controller"></button>
+            <button type="button" class="btn controllers__btn products__controller"></button>
           </div>
           <button type="button" class="btn controller-btn controller-next"></button>
         </div>
       </div>
     </section>
-
+    
     <section class="reasons__section container">
       <div class="section__title reasons__title">
         <img class="title__img" src="img/list_left.png" alt="List">
@@ -828,119 +794,119 @@
       </div>
     </section>
 
-    <footer class="main__footer">
-      <div class="container">
-        <div class="footer__top basic-flex">
-          <div class="footer__menu__wrapper">
-            <button type="button" class="btn footer__menu-btn product__footer__title">Меню</button>
-            <ul class="types__list">
-              <li class="types__item">
-                <a href="#" class="types__link">Суши</a>
+  </main>
+
+  <footer class="main__footer">
+    <div class="container">
+      <div class="footer__top basic-flex">
+        <div class="footer__menu__wrapper">
+          <button type="button" class="btn footer__menu-btn product__footer__title">Меню</button>
+          <ul class="types__list">
+            <li class="types__item">
+              <a href="#" class="types__link">Суши</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Гунканы</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Инари</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Супы</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Салаты</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Горячие закуски</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Десерты</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Напитки</a>
+            </li>
+            <li class="types__item">
+              <a href="#" class="types__link">Дополительно</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product__list__wrapper">
+          <button type="button" class="btn product__footer__title">Сеты</button>
+          <div class="basic-flex product__footer__list__wrapper">
+            <ul class="product__footer__list">
+              <li class="product__footer__item">
+                <a href="#">До 500 руб.</a>
               </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Гунканы</a>
+              <li class="product__footer__item">
+                <a href="#">До 1000 руб. (для двоих)</a>
               </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Инари</a>
+              <li class="product__footer__item">
+                <a href="#">До 2000 руб (большая кампания)</a>
               </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Супы</a>
-              </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Салаты</a>
-              </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Горячие закуски</a>
-              </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Десерты</a>
-              </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Напитки</a>
-              </li>
-              <li class="types__item">
-                <a href="#" class="types__link">Дополительно</a>
+              <li class="product__footer__item">
+                <a href="#">До 2000 руб (большая кампания)</a>
+              <li class="product__footer__item">
+                <a href="#">от 2000 руб (очень большая кампания)</a>
               </li>
             </ul>
-          </div>
-          <div class="product__list__wrapper">
-            <button type="button" class="btn product__footer__title">Сеты</button>
-            <div class="basic-flex product__footer__list__wrapper">
-              <ul class="product__footer__list">
-                <li class="product__footer__item">
-                  <a href="#">До 500 руб.</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">До 1000 руб. (для двоих)</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">До 2000 руб (большая кампания)</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">До 2000 руб (большая кампания)</a>
-                <li class="product__footer__item">
-                  <a href="#">от 2000 руб (очень большая кампания)</a>
-                </li>
-              </ul>
-              <ul class="product__footer__list">
-                <li class="product__footer__item">
-                  <a href="#">С угрем</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">Горячие</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">Запеченые</a>
-                </li>
-                <li class="product__footer__item">
-                  <a href="#">Суши</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="product__list__wrapper">
-            <button type="button" class="btn product__footer__title">Роллы</button>
             <ul class="product__footer__list">
-              <li class="product__footer__item"><a href="#">Традиционные/Классические</a></li>
-              <li class="product__footer__item"><a href="#">Простые</a></li>
-              <li class="product__footer__item"><a href="#">Теплые</a></li>
-              <li class="product__footer__item"><a href="#">Запеченые</a></li>
-              <li class="product__footer__item"><a href="#">Вегитарианские</a></li>
-            </ul>
-          </div>
-          <div class="product__list__wrapper">
-            <button type="button" class="btn product__footer__title">Вок</button>
-            <ul class="product__footer__list">
-              <li class="product__footer__item"><a href="#">Яичная</a></li>
-              <li class="product__footer__item"><a href="#">Удон</a></li>
-              <li class="product__footer__item"><a href="#">Гречневая</a></li>
-              <li class="product__footer__item"><a href="#">Стеклянная</a></li>
-              <li class="product__footer__item"><a href="#">Рис</a></li>
-            </ul>
-          </div>
-          <div class="product__list__wrapper">
-            <button type="button" class="btn product__footer__title">Пицца</button>
-            <ul class="product__footer__list">
-              <li class="product__footer__item"><a href="#">Мясная</a></li>
-              <li class="product__footer__item"><a href="#">Рыбная</a></li>
-              <li class="product__footer__item"><a href="#">Сырная</a></li>
-              <li class="product__footer__item"><a href="#">Вегитарианская</a></li>
+              <li class="product__footer__item">
+                <a href="#">С угрем</a>
+              </li>
+              <li class="product__footer__item">
+                <a href="#">Горячие</a>
+              </li>
+              <li class="product__footer__item">
+                <a href="#">Запеченые</a>
+              </li>
+              <li class="product__footer__item">
+                <a href="#">Суши</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="footer__bottom basic-flex">
-          <p>МИЮШИ © 2017</h3>
-          <p class="agreement-text"><u>Соглашение на обработку персональных данных</u></p>
-          <ul class="social__list basic-flex">
-            <li class="social__item"><a href="#"></a></li>
-            <li class="social__item"><a href="#"></a></li>
-            <li class="social__item"><a href="#"></a></li>
+        <div class="product__list__wrapper">
+          <button type="button" class="btn product__footer__title">Роллы</button>
+          <ul class="product__footer__list">
+            <li class="product__footer__item"><a href="#">Традиционные/Классические</a></li>
+            <li class="product__footer__item"><a href="#">Простые</a></li>
+            <li class="product__footer__item"><a href="#">Теплые</a></li>
+            <li class="product__footer__item"><a href="#">Запеченые</a></li>
+            <li class="product__footer__item"><a href="#">Вегитарианские</a></li>
+          </ul>
+        </div>
+        <div class="product__list__wrapper">
+          <button type="button" class="btn product__footer__title">Вок</button>
+          <ul class="product__footer__list">
+            <li class="product__footer__item"><a href="#">Яичная</a></li>
+            <li class="product__footer__item"><a href="#">Удон</a></li>
+            <li class="product__footer__item"><a href="#">Гречневая</a></li>
+            <li class="product__footer__item"><a href="#">Стеклянная</a></li>
+            <li class="product__footer__item"><a href="#">Рис</a></li>
+          </ul>
+        </div>
+        <div class="product__list__wrapper">
+          <button type="button" class="btn product__footer__title">Пицца</button>
+          <ul class="product__footer__list">
+            <li class="product__footer__item"><a href="#">Мясная</a></li>
+            <li class="product__footer__item"><a href="#">Рыбная</a></li>
+            <li class="product__footer__item"><a href="#">Сырная</a></li>
+            <li class="product__footer__item"><a href="#">Вегитарианская</a></li>
           </ul>
         </div>
       </div>
-    </footer>
-
-  </main>
+      <div class="footer__bottom basic-flex">
+        <p>МИЮШИ © 2017</h3>
+        <p class="agreement-text"><u>Соглашение на обработку персональных данных</u></p>
+        <ul class="social__list basic-flex">
+          <li class="social__item"><a href="#"></a></li>
+          <li class="social__item"><a href="#"></a></li>
+          <li class="social__item"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>

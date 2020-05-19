@@ -168,9 +168,6 @@
     padding: 30px 0;
     width: 350px;
   }
-  .navbar__menu__wrapper {
-    flex-direction: column;
-  }
   .with-menu {
     &::after {
       display: none;
@@ -214,7 +211,8 @@
   .top__address {
     display: none;
   }
-  .navbar__menu__wrapper {
+  .navbar__menu-wrapper {
+    flex-direction: column;
     width: 100%;
   }
   .top__right {
