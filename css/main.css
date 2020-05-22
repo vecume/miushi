@@ -389,18 +389,11 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
-  display: block;
   text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 section {
@@ -430,6 +423,18 @@ section {
   cursor: pointer;
   outline: none;
   background: transparent;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .btn-menu {
@@ -613,6 +618,12 @@ section {
 .navbar .basic-flex {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.navbar__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .menu__link {
@@ -1118,11 +1129,11 @@ section {
   border-radius: 15px;
 }
 
-.product__img__wrapper {
+.product__img-wrapper {
   font-family: "Roboto Slab", "Arial", sans-serif;
 }
 
-.product__img__wrapper img {
+.product__img-wrapper img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -1141,7 +1152,7 @@ section {
   font-weight: 300;
 }
 
-.price__and__amount {
+.price-and-amount {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 30px 0;
@@ -1149,7 +1160,7 @@ section {
   padding: 0 25px;
 }
 
-.price__and__amount strong {
+.price-and-amount strong {
   font-size: 22px;
 }
 
@@ -1452,23 +1463,23 @@ section {
   border: 1px solid #e6e6e6;
 }
 
-.user__header img {
+.user-header img {
   width: 65px;
   height: 65px;
   border-radius: 50%;
 }
 
-.user__info {
+.user-info {
   margin-left: 25px;
 }
 
-.user__info h5 {
+.user-info h5 {
   margin: 5px 0;
   color: #5e81a7;
   font-size: 15px;
 }
 
-.user__info p {
+.user-info p {
   margin: 5px 0;
   font-size: 13px;
   color: #4d4d4d;
@@ -1614,7 +1625,7 @@ section {
   }
 }
 
-.contact__section {
+.contact-section {
   padding: 100px 0;
   background-image: url("../img/feedback_bg.jpg");
   background-position: center center;
@@ -1622,7 +1633,7 @@ section {
   background-repeat: no-repeat;
 }
 
-.contact__section__inside__wrapper {
+.contact-section-inside-wrapper {
   width: 60%;
   color: white;
   margin-left: auto;
@@ -1814,6 +1825,18 @@ section {
 
 .main__footer a:hover, .main__footer a:focus {
   text-decoration: underline;
+}
+
+.types__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product__footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer__menu-btn {
