@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
 }
 
+.contact__form {
+  label {
+    width: 100%;
+  }
+}
+
 .contact-section-inside-wrapper {
   width: 60%;
   color: white;
@@ -65,7 +71,7 @@
     padding: 75px 0;
     background-image: url("../img/feedback_bg-750.png");
   }
-  .contact__section__inside__wrapper {
+  .contact-section-inside-wrapper {
     width: 100%;
     margin: unset;
   }
