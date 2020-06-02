@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
   <main>
     <header class="main-header">
@@ -20,10 +19,6 @@
             <img class="mini-logo" src="img/mini-logo.png" alt="Miushi Logo">
           </a>
           <a href="#" class="top__address with-icon">г. Курск, ул. Ленина, д. 3</a>
-        </div>
-        <div class="account__related account__related--display-750 basic-flex">
-          <a href="#" class="cabinet with-icon">Кабинет</a>
-          <a href="№" class="basket with-icon">Корзинка</a>
         </div>
         <div class="top__right basic-flex">
           <a href="mailto:78003332222@yandex.ru" class="email with-icon">78003332222@yandex.ru</a>
@@ -38,34 +33,53 @@
       </div>
       <button class="btn btn-menu"><span class="hamburger"></span></button>
       <div class="layer"></div>
-      <nav class="navbar">
-        <div class="navbar__wrapper">
-          <div class="container navbar__menu-wrapper basic-flex">
-            <ul class="navbar__menu basic-flex">
-              <li class="menu__item"><a href="#" class="menu__link basic-flex with-menu">Меню</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Акции и скидки</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Новости</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-            </ul>
-            <div class="account__related basic-flex">
-              <a href="#" class="cabinet with-icon">Кабинет</a>
-              <a href="№" class="basket with-icon">Корзинка</a>
+      <div class="header__bottom basic-flex container">
+        <nav class="navbar">
+          <div class="navbar__wrapper">
+            <div class="container navbar__menu-wrapper basic-flex">
+              <ul class="navbar__menu basic-flex">
+                <li class="menu__item"><a href="#" class="menu__link basic-flex with-menu">Меню</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Акции и скидки</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Новости</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+              </ul>
             </div>
-          </div>
-          <div class="top__right contact-details-750 basic-flex">
-            <div class="tel-number">
-              <a href="tel:+78003332222" class="tel-number__link">+7 (800) 333 2 222</a>
-              <div class="working-hours">
-                <p>Работаем с 11.00 до 23.00</p>
+            <div class="top__right contact-details-750 basic-flex">
+              <div class="tel-number">
+                <a href="tel:+78003332222" class="tel-number__link">+7 (800) 333 2 222</a>
+                <div class="working-hours">
+                  <p>Работаем с 11.00 до 23.00</p>
+                </div>
+                <a href="#" class="top__call">Обратный звонок</a>
               </div>
-              <a href="#" class="top__call">Обратный звонок</a>
+              <a href="#" class="top__address top__address--display-750 with-icon">г. Курск, ул. Ленина, д. 3</a>
+              <a href="mailto:78003332222@yandex.ru" class="email with-icon">78003332222@yandex.ru</a>
             </div>
-            <a href="#" class="top__address top__address--display-750 with-icon">г. Курск, ул. Ленина, д. 3</a>
-            <a href="mailto:78003332222@yandex.ru" class="email with-icon">78003332222@yandex.ru</a>
           </div>
+        </nav>
+        <div class="account__related basic-flex">
+          <a href="#" class="cabinet with-icon">Кабинет</a>
+          <a href="#" class="basket with-icon" data-amount=0>
+            <span><span>Корзинка</span><span class="overall-price">Нет товаров</span></span>
+          </a>
+          
+          <div class="basket-box">
+            <h4 class="basket__title">КОРЗИНА</h4>
+            <ul class="basket-list">
+            
+            </ul>
+            <div class="basket-overall-price-info">
+              <p><span class="overall-product-quantity">0</span> товар(ов) на сумму:</p>
+              <p>
+                <span class="overall-price-amount">0</span>
+                <span>руб.</span>
+              </p>
+            </div>
+          </div>
+  
         </div>
-      </nav>
+      </div>
     </header>
 
     <section class="banner">
@@ -99,7 +113,7 @@
         <h2 class="title__text">Сеты</h2>
         <img class="title__img" src="img/list_right.png" alt="List">
       </div>
-      <ul class="products__list basic-flex">
+      <ul data-name="Сеты" class="products__list basic-flex">
         <li class="product__item">
           <div class="product__img-wrapper product--hit"><img src="img/s1.jpg" alt=""></div>
           <div class="product__content">
@@ -108,13 +122,13 @@
             <div class="price-and-amount basic-flex">
               <strong>2050<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -132,13 +146,13 @@
             <div class="price-and-amount basic-flex">
               <strong>1590<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -156,13 +170,13 @@
             <div class="price-and-amount basic-flex">
               <strong>510<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -180,13 +194,13 @@
             <div class="price-and-amount basic-flex">
               <strong>400<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -224,7 +238,7 @@
         <h2 class="title__text">Роллы</h2>
         <img class="title__img" src="img/list_right.png" alt="List">
       </div>
-      <ul class="products__list basic-flex">
+      <ul data-name="Роллы" class="products__list basic-flex">
         <li class="product__item">
           <div class="product__img-wrapper small__img"><img src="img/r1.jpg" alt=""></div>
           <div class="product__content">
@@ -233,13 +247,13 @@
             <div class="price-and-amount basic-flex">
               <strong>260<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -257,13 +271,13 @@
             <div class="price-and-amount basic-flex">
               <strong>280<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -281,13 +295,13 @@
             <div class="price-and-amount basic-flex">
               <strong>280<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -305,13 +319,13 @@
             <div class="price-and-amount basic-flex">
               <strong>290<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -349,7 +363,7 @@
         <h2 class="title__text">Пицца</h2>
         <img class="title__img" src="img/list_right.png" alt="List">
       </div>
-      <ul class="products__list basic-flex">
+      <ul data-name="Пицца" class="products__list basic-flex">
         <li class="product__item">
           <div class="product__img-wrapper"><img src="img/p1.jpg" alt=""></div>
           <div class="product__content">
@@ -358,13 +372,13 @@
             <div class="price-and-amount basic-flex">
               <strong>480<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -382,13 +396,13 @@
             <div class="price-and-amount basic-flex">
               <strong>380<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -406,13 +420,13 @@
             <div class="price-and-amount basic-flex">
               <strong>450<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -430,13 +444,13 @@
             <div class="price-and-amount basic-flex">
               <strong>390<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -474,7 +488,7 @@
         <h2 class="title__text">WOK</h2>
         <img class="title__img" src="img/list_right.png" alt="List">
       </div>
-      <ul class="products__list basic-flex">
+      <ul data-name="Вок" class="products__list basic-flex">
         <li class="product__item">
           <div class="product__img-wrapper product--hot small__img"><img src="img/w1.jpg" alt=""></div>
           <div class="product__content">
@@ -506,13 +520,13 @@
             <div class="price-and-amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -553,13 +567,13 @@
             <div class="price-and-amount basic-flex">
               <strong>290<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -600,13 +614,13 @@
             <div class="price-and-amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -647,13 +661,13 @@
             <div class="price-and-amount basic-flex">
               <strong>430<sup>руб.</sup></strong>
               <div class="amount__wrapper basic-flex">
-                <button type="button" class="btn amount__add-btn">
+                <button type="button" class="btn amount__remove-btn">
                   <span class="visually-hidden">
                     Добавить
                   </span>
                 </button>
-                <span>1</span>
-                <button type="button" class="btn amount__remove-btn">
+                <span class="exact-product-amount">1</span>
+                <button type="button" class="btn amount__add-btn">
                   <span class="visually-hidden">
                     Удалить
                   </span>
@@ -691,7 +705,7 @@
           <a href="#" class="link--active">Новинки</a>
           <a href="#">Акции</a>
         </div>
-        <ul class="products__list basic-flex">
+        <ul data-name="Роллы" class="products__list basic-flex">
           <li class="product__item">
             <div class="product__img-wrapper product--new small__img"><img src="img/r1.jpg" alt=""></div>
             <div class="product__content">
@@ -700,13 +714,13 @@
               <div class="price-and-amount basic-flex">
                 <strong>260<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn amount__add-btn">
+                  <button type="button" class="btn amount__remove-btn">
                     <span class="visually-hidden">
                       Добавить
                     </span>
                   </button>
-                  <span>1</span>
-                  <button type="button" class="btn amount__remove-btn">
+                  <span class="exact-product-amount">1</span>
+                  <button type="button" class="btn amount__add-btn">
                     <span class="visually-hidden">
                       Удалить
                     </span>
@@ -724,13 +738,13 @@
               <div class="price-and-amount basic-flex">
                 <strong>280<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn amount__add-btn">
+                  <button type="button" class="btn amount__remove-btn">
                     <span class="visually-hidden">
                       Добавить
                     </span>
                   </button>
-                  <span>1</span>
-                  <button type="button" class="btn amount__remove-btn">
+                  <span class="exact-product-amount">1</span>
+                  <button type="button" class="btn amount__add-btn">
                     <span class="visually-hidden">
                       Удалить
                     </span>
@@ -748,13 +762,13 @@
               <div class="price-and-amount basic-flex">
                 <strong>280<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn amount__add-btn">
+                  <button type="button" class="btn amount__remove-btn">
                     <span class="visually-hidden">
                       Добавить
                     </span>
                   </button>
-                  <span>1</span>
-                  <button type="button" class="btn amount__remove-btn">
+                  <span class="exact-product-amount">1</span>
+                  <button type="button" class="btn amount__add-btn">
                     <span class="visually-hidden">
                       Удалить
                     </span>
@@ -772,13 +786,13 @@
               <div class="price-and-amount basic-flex">
                 <strong>290<sup>руб.</sup></strong>
                 <div class="amount__wrapper basic-flex">
-                  <button type="button" class="btn amount__add-btn">
+                  <button type="button" class="btn amount__remove-btn">
                     <span class="visually-hidden">
                       Добавить
                     </span>
                   </button>
-                  <span>1</span>
-                  <button type="button" class="btn amount__remove-btn">
+                  <span class="exact-product-amount">1</span>
+                  <button type="button" class="btn amount__add-btn">
                     <span class="visually-hidden">
                       Удалить
                     </span>
@@ -1125,6 +1139,9 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/flyto.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
