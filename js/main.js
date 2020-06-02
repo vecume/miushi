@@ -250,6 +250,11 @@ $(document).ready(function() {
     $('.overall-product-quantity').text(productsInfo.amount);
     $('.overall-price-amount').text(productsInfo.price);
     $('.basket').attr('data-amount', productsInfo.amount);
+    if(productsInfo.price === 0) {
+      $('.overall-price').text('Нет товаров');
+    } else {
+      $('.overall-price').text(productsInfo.price + 'руб.');
+    }
   }
 });
 
