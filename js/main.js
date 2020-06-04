@@ -210,6 +210,79 @@ $(document).ready(function() {
   });
 
 
+  ///////////////////
+  ///SLIDER///////
+  //////////////////
+
+  $('.banner-slider-wrapper').slick({
+    prevArrow: `<button class="btn controller controller--left" type="button">
+    <span class="visually-hidden">предыдущая</span>
+    </button>`,
+    nextArrow: `<button class="btn controller controller--right" type="button">
+    <span class="visually-hidden">
+      следующий</span>
+    </button>`,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    dotsClass: 'banner__controllers basic-flex',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows:false
+        }
+      }
+    ]
+  });
+
+  $('.products__list').slick({
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    accessibility: true,
+    dots: true,
+    dotsClass: 'products__controllers__wrapper',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+        }
+      }
+    ]
+  });
+
+
+  // $('.controllers__btn').click(function() { 
+  //   $('.controllers__btn').each(function() {
+  //     $(this).removeClass('controllers__btn--active');
+  //   })
+  //   const slideIndex = $(this).data('slide');
+  //   $(this).addClass('controllers__btn--active');
+  //   $('.products__list').slick('slickGoTo',slideIndex)
+  // });
+
+
+  $('.controller-prev').click(function(){
+    $('.products__list').slick('slickPrev');
+  })
+  
+  $('.controller-next').click(function(){
+    $('.products__list').slick('slickNext');
+  })
+
+  
 
 
 
@@ -218,7 +291,7 @@ $(document).ready(function() {
   ///////////////
   function getProductInfo(parentElement) {
     const productType = parentElement.children('h3').text();
-    const name = parentElement.parent().parent().data('name');
+    const name = parentElement.parent().parent().parent().parent().data('name');
     const price = parentElement.find('.price-and-amount strong').text().replace('руб.','');
 
     const amount = parentElement.find('.exact-product-amount').text();

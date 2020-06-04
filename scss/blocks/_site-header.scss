@@ -143,7 +143,6 @@
   position: fixed;
   width: 100%;
   background: #fff;
-  padding: 10px;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
@@ -168,6 +167,7 @@
     justify-content: flex-end;
   }
   .sticky {
+    padding: 10px 0;
     .account__related {
       padding-left: 60px;
       width: 750px;;

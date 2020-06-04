@@ -84,27 +84,33 @@
 
     <section class="banner">
       <div class="container">
-        <div class="banner__content">
-          <div class="banner__title__box basic-flex">
-            <h3 class="banner__title">Счастливые часы</h1>
-            <div class="discount"><span>скидка 15%</span></div>
-          </div>
-          <p class="banner__description">с 11:00 до 16:00 в будние дни</p>
-          <a href="#" class="banner__more__link">Подробнее</a>
-        </div>
-        <div class="banner__controllers basic-flex">
-            <button type="button" class="btn controllers__btn"></button>
-            <button type="button" class="btn controllers__btn"></button>
-            <button type="button" class="btn controllers__btn controllers__btn--active"></button>
+        <div class="banner-slider-wrapper">
+            <div class="banner__content">
+              <div class="banner__title__box basic-flex">
+                <h3 class="banner__title">Счастливые часы</h1>
+                <div class="discount"><span>скидка 15%</span></div>
+              </div>
+              <p class="banner__description">с 11:00 до 16:00 в будние дни</p>
+              <a href="#" class="banner__more__link">Подробнее</a>
+            </div>
+            <div class="banner__content">
+              <div class="banner__title__box basic-flex">
+                <h3 class="banner__title">Счастливые часы</h1>
+                <div class="discount"><span>скидка 15%</span></div>
+              </div>
+              <p class="banner__description">с 11:00 до 16:00 в будние дни</p>
+              <a href="#" class="banner__more__link">Подробнее</a>
+            </div>
+            <div class="banner__content">
+              <div class="banner__title__box basic-flex">
+                <h3 class="banner__title">Счастливые часы</h1>
+                <div class="discount"><span>скидка 15%</span></div>
+              </div>
+              <p class="banner__description">с 11:00 до 16:00 в будние дни</p>
+              <a href="#" class="banner__more__link">Подробнее</a>
+            </div>
         </div>
       </div>
-      <button class="btn controller controller--left" type="button">
-        <span class="visually-hidden">предыдущая</span>
-      </button>
-      <button class="btn controller controller--right" type="button">
-        <span class="visually-hidden">
-          следующий</span>
-      </button>
     </section>
 
     <section class="sets container products-section">
@@ -217,13 +223,6 @@
             Предыдущая
           </span>
         </button>
-        <div class="products__controllers__wrapper basic-flex">
-          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-        </div>
         <button type="button" class="btn controller-btn controller-next">
           <span class="visually-hidden">
             Следующий
@@ -342,13 +341,6 @@
             предыдущая
           </span>
         </button>
-        <div class="products__controllers__wrapper basic-flex">
-          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-        </div>
         <button type="button" class="btn controller-btn controller-next">
           <span class="visually-hidden">
             Следующий
@@ -467,13 +459,6 @@
             предыдущая
           </span>
         </button>
-        <div class="products__controllers__wrapper basic-flex">
-          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-        </div>
         <button type="button" class="btn controller-btn controller-next">
           <span class="visually-hidden">
             Следующий
@@ -684,13 +669,6 @@
             предыдущая
           </span>
         </button>
-        <div class="products__controllers__wrapper basic-flex">
-          <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-          <button type="button" class="btn controllers__btn products__controller"></button>
-        </div>
         <button type="button" class="btn controller-btn controller-next">
           <span class="visually-hidden">
             Следующий
@@ -809,13 +787,6 @@
               предыдущая
             </span>
           </button>
-          <div class="products__controllers__wrapper basic-flex">
-            <button type="button" class="btn controllers__btn products__controller controllers__btn--active"></button>
-            <button type="button" class="btn controllers__btn products__controller"></button>
-            <button type="button" class="btn controllers__btn products__controller"></button>
-            <button type="button" class="btn controllers__btn products__controller"></button>
-            <button type="button" class="btn controllers__btn products__controller"></button>
-          </div>
           <button type="button" class="btn controller-btn controller-next">
             <span class="visually-hidden">
               Следующий
@@ -1141,6 +1112,7 @@
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/flyto.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -1,10 +1,12 @@
 .banner {
   position: relative;
-  padding: 60px 0;
   background-image: url("../img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 550px;
 }
+
+
 
 .banner__title__box {
   justify-content: unset;
@@ -13,7 +15,6 @@
 }
 
 .discount {
-  // margin-top: 50px;
   position: relative;
   text-align: center; 
   font-size: 30px;
@@ -41,6 +42,10 @@
   font-weight: normal;
 }
 
+.banner__content {
+  outline: none;
+}
+
 .banner__description {
   margin: 50px 0;
   font-size: 20px;
@@ -64,10 +69,6 @@
   }
 }
 
-.banner__controllers {
-  width: 5%;
-  margin: 25px auto;
-}
 
 .controller {
   position: absolute;
@@ -87,28 +88,50 @@
 }
 
 .controller--left {
-  left: 15px;
+  left: -5%;
   background-image: url("../img/arrow.png");
 }
 .controller--right {
-  right: 15px;
+  right: -5%;
   background-image: url("../img/arrow.png");
   transform: rotate(180deg);
 }
 
 .banner__controllers {
-  margin-top: 25px;
+  list-style: none;
+  width: 5%;
+  margin: 0 auto;
+  padding: 0;
+  
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+    button {
+      display: block;
+      border: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #c2c2c2;
+      background: transparent;
+      transition: 0.3s;
+      outline: none;
+      font-size: 0;
+      cursor: pointer;
+    }
+  }
+  .slick-active {
+    button {
+      transform: scale(1.1);
+      background: $main-green;
+    }
+  }
 }
 
 
-.controllers__btn {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid #c2c2c2;
-  transition: 0.3s;
-}
+
 
 
 
@@ -131,6 +154,7 @@
 @media only screen and (max-width: 750px) {
   .banner {
     padding-bottom: 10px;
+    height: 70vh;
   }
   .banner__title {
     font-size: 48px;
@@ -142,9 +166,8 @@
     width: 60px;
   }
   .banner__controllers {
-    margin-top: 25px;
     position: relative;
-    top: 80px;
+    top: 40px;
     width: 20%;
   }
   .banner__more__link {
